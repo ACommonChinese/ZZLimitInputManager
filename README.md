@@ -1,12 +1,11 @@
 # ZZLimitInputManager
 UITextField &amp;&amp; UITextView 长度限制和正则限制
 
-使用方法：把文件夹ZZLimitInputManager托入工程
+使用方法：把文件夹ZZLimitInputManager托入工程并导入头文件 `#import "ZZLimitInputManager.h"`
 
-** UITextField **
+####UITextField
 
 ```
-#import "ZZLimitInputManager.h"
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -24,10 +23,9 @@ UITextField &amp;&amp; UITextView 长度限制和正则限制
 }
 ```
 
-** UITextView **
+#####UITextView
 
 ```
-#import "ZZLimitInputManager.h"
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -44,3 +42,5 @@ UITextField &amp;&amp; UITextView 长度限制和正则限制
     [ZZLimitInputManager limitPhoneInputView:self.textView_4];
 }
 ```
+
+![](./1.png)
