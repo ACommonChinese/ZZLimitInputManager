@@ -3,7 +3,7 @@ UITextField &amp;&amp; UITextView 长度限制和正则限制
 
 使用方法：把文件夹ZZLimitInputManager托入工程并导入头文件 `#import "ZZLimitInputManager.h"`
 
-####**UITextField**
+**UITextField**
 
 ```objective-c
 - (void)viewDidLoad {
@@ -24,7 +24,7 @@ UITextField &amp;&amp; UITextView 长度限制和正则限制
 }
 ```
 
-#####**UITextView**
+**UITextView**
 
 ```objective-c
 - (void)viewDidLoad {
