@@ -31,18 +31,13 @@
     
     // 限制不可输入首字符为0
     [ZZLimitInputManager limitInputView:self.textView_3 regX:@"[^0].*"];
-    
-    // 限制不可输入首字符为0, 手机号码至多11位(xib中设置数字键盘)
-    [ZZLimitInputManager limitPhoneInputView:self.textView_4];
 }
 
-- (IBAction)dismiss:(id)sender
-{
+- (IBAction)dismiss:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
     NSLog(@"%s", __func__);
 }
 

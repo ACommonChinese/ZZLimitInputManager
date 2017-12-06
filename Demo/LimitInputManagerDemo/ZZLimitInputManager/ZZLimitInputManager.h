@@ -9,13 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface UIView (Limit)
-
-@property (nonatomic) NSInteger limitMaxLength;
-@property (nonatomic, copy) NSString *limitRegx;
-@end
-
-
 @interface ZZLimitInputManager : NSObject
 
 /**
@@ -31,12 +24,6 @@
  *  @param regx 正则表达式
  */
 + (void)limitInputView:(UIView<UITextInput> *)view regX:(NSString *)regx;
-
-/**
- *  限制输入不超过11位，首字符不可为 ［注：作为封装，此接口不当提供，当删除，仅因做项目需求］
- *  @param view UITextFiel或UITextView对象
- */
-+ (void)limitPhoneInputView:(UIView<UITextInput> *)view;
 
 @end
 
